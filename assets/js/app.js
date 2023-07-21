@@ -179,7 +179,7 @@ export const updateWeather = function (lat, lon) {
 
             <div class="wrapper">
 
-              <span class="m-icon">air</span>
+              <span class="m-icon nomobile">air</span>
 
               <ul class="card-list">
 
@@ -190,19 +190,19 @@ export const updateWeather = function (lat, lon) {
                 </li>
 
                 <li class="card-item">
-                  <p class="title-1">${so2.toPrecision(2)}</p>
+                  <p class="title-1">${so2.toPrecision(1)}</p>
 
                   <p class="label-1">Серен диоксид</p>
                 </li>
 
                 <li class="card-item">
-                  <p class="title-1">${no2.toPrecision(2)}</p>
+                  <p class="title-1">${no2.toPrecision(1)}</p>
 
                   <p class="label-1">Азотен диоксид</p>
                 </li>
 
                 <li class="card-item">
-                  <p class="title-1">${co.toPrecision()}</p>
+                  <p class="title-1">${Math.round(co)}</p>
 
                   <p class="label-1">Въглероден оксид</p>
                 </li>

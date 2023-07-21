@@ -190,6 +190,10 @@ body {
     overflow: hidden;
 }
 
+.nomobile {
+    display: none;
+}
+
 
 
 /* GENERAL */
@@ -654,8 +658,8 @@ article.container::before {
 
 .highlight-card .card-item {
     width: 50%;
-    justify-content: flex-end;
-    gap: 4px;
+    justify-content: flex-start;
+    gap: 6px;
 }
 
 .highlight-card .label-1 {
@@ -666,7 +670,7 @@ article.container::before {
     position: absolute;
     top: 16px;
     right: 16px;
-    padding: 2px 12px;
+    padding: 2px 5px;
     border-radius: var(--radius-pill);
     font-weight: var(--weight-semiBold);
     cursor: help;
@@ -860,6 +864,11 @@ article.container::before {
     .badge {
         top: 20px;
         right: 20px;
+        padding: 2px 16px;
+    }
+
+    .nomobile {
+        display: block;
     }
 
 
@@ -952,6 +961,9 @@ article.container::before {
         padding: 16px;
     }
 
+    .highlight-card .card-item {
+        justify-content: flex-end;
+    }
 
     /* FOOTER */
 
