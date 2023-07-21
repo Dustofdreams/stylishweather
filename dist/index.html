@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <title>StylishWeather</title>
+  <meta name="title" content="StylishWeather">
+  <meta name="description" content="StylishWeather is a weather app by Stoyan Nikolov">
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> 
+
+  <link rel="shortcut icon" href="images/favicon.png" type="image/png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  
+
+  
+  
+  <script type="module" crossorigin src="/stylishweather/assets/index-a3dea9cf.js"></script>
+  <link rel="stylesheet" href="/stylishweather/assets/index-f1bb5570.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container">
+
+      <a href="" class="logo">
+        <img src="images/stylishweather.png" width="364" height="58" alt="logo">
+      </a>
+
+      <div class="search-view" data-search-view>
+
+        <div class="search-wrapper">
+          <input type="search" name="search" placeholder="Потърси град..." autocomplete="off" class="search-field"
+            data-search-field>
+
+          <span class="m-icon leading-icon">search</span>
+
+          <button class="icon-btn leading-icon has-state" aria-label="close search" data-search-toggler>
+            <span class="m-icon">arrow_back</span>
+          </button>
+        </div>
+
+        <div class="search-result" data-search-result></div>
+
+      </div>
+
+      <div class="header-actions">
+
+        <button class="icon-btn has-state" aria-label="open search" data-search-toggler>
+          <span class="m-icon icon">search</span>
+        </button>
+
+        <a href="#/current-location" class="btn-primary has-state" data-current-location-btn>
+          <span class="m-icon">my_location</span>
+
+          <span class="span">Използвай настоящата локация</span>
+        </a>
+
+      </div>
+
+    </div>
+  </header>
+
+
+  <main>
+    <article class="container" data-container>
+
+      <div class="content-left">
+
+        <!-- CURRENT WEATHER -->
+        <section class="section current-weather" aria-label="current weather" data-current-weather>
+
+        </section>
+        <section class="section forecast" aria-labelledby="forecast-label" data-5-day-forecast>
+
+        </section>
+      </div>
+
+      <div class="content-right">
+
+        <!-- DETAILS -->
+        <section class="section highlights" aria-labelledby="highlights-label" data-highlights>
+
+        </section>
+
+        <!-- HOURLY WEATHER -->
+        <section class="section hourly-forecast" aria-label="hourly forecast" data-hourly-forecast>
+
+        </section>
+
+
+        <footer class="footer">
+          <p class="body-3">
+            Copyright 2023 Stoyan Nikolov. All Rights Reserved.
+          </p>
+
+          <p class="body-3">
+            <a href="https://openweathermap.org/api" title="Free OpenWeather Api" target="_blank" rel="noopener">
+              <img src="images/logo_white_cropped.png" width="150" height="30" loading="lazy"
+                alt="OpenWeather">
+            </a>
+          </p>
+        </footer>
+      </div>
+
+      <div class="loading" data-loading>
+
+      </div>
+
+
+
+    </article>
+  </main>
+
+
+
+
+
+<!-- ERROR SECTION -->
+
+  <section class="error-content" data-error-content>
+
+    <h2 class="heading">404</h2>
+
+    <p class="body-1">Страницата не е намерена!</p>
+
+    <a href="#/weather?lat=43.2073873&lon=27.9166653" class="btn-primary">
+      <span class="span">Начална страница</span>
+    </a>
+
+  </section>
+
+</body>
+
+</html>
